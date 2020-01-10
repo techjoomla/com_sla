@@ -41,6 +41,11 @@
     <languages folder="site">
 			<language tag="en-GB">languages/en-GB/en-GB.com_sla.ini</language>
     </languages>
+    -<media destination="com_sla" folder="media">
+		<filename>index.html</filename>
+        <folder>js</folder>
+        <folder>fields</folder>
+    </media>
     <administration>
         <menu>COM_SLA</menu>
         <submenu>
