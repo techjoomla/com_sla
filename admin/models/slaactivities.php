@@ -263,7 +263,8 @@ class SlaModelSlaActivities extends ListModel
 				if (!empty($cluster->cluster_id))
 				{
 					// Todo: Need to introduce cluster level permission in com_sla
-					if (RBACL::check($user->id, 'com_multiagency', 'core.adduser', $cluster->client_id))
+					if (RBACL::check($user->id, 'com_cluster', 'core.manage', $cluster->cluster_id)
+						&& ComponentHelper::getComponent('com_subusers', true)->enabled )
 					{
 						$clusterIds[] = $cluster->cluster_id;
 					}

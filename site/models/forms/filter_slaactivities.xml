@@ -9,15 +9,6 @@
 			description="COM_SLA_SLA_ACTIVITY_FILTER_SEARCH_DESC"
 			hint="JSEARCH_FILTER"
 		/>
-		<field
-			name="license_id"
-			type="licenses"
-			label="COM_SLA_SLA_ACTIVITY_FILTER_LICENSE_LABEL"
-			description="COM_SLA_SLA_ACTIVITY_FILTER_LICENSE_DESC"
-			multiple="false"
-			addfieldpath="/components/com_multiagency/models/fields"
-			onchange="this.form.submit();"
-		/>
 
 		<field
 			name="sla_activity_type_id"
